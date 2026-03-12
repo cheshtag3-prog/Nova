@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nova</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="nova.css">
+  <style>
+    .pro {
+      position: relative;
+      height: 100%;
+    }
+
+    .pro {
+
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: auto;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 450px;
+      height: 550px;
+      object-fit: cover;
+    }
+  </style>
+
+</head>
+
+<body style="background: #F5F2EC;">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- nav start -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-5" style="font-family: nova; color: #3E5C4A;" href="#">
+        <h1>NOVA</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse pe-5" style="justify-content: end;" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">SERVICE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="work.html">WORK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FQA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- nav end -->
+  <div class="container-fluid py-5">
+    <div class="row justify-content-center">
+
+      <div class="col-12 text-center mb-4" style="margin-top: 100px;">
+        <h1 style="font-size: 50px; font-family: main;">Portfolio</h1>
+        <p class="px-3 px-md-5">
+          At Nova, every project tells a story of thoughtful design and refined craftsmanship.
+        </p>
+      </div>
+
+      <div class="col-xl-6 col-lg-8 col-md-10 col-11">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner rounded shadow">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="img/before.jpg" class="d-block w-100 img-fluid" alt="" style="width: 100%; height: 650px;">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="img/after.jpg" class="d-block w-100 img-fluid" alt="" style="width: 100%; height: 650px;">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end -->
+  <!-- Recent Projects -->
+  <div class="container pro" style="overflow: hidden;">
+    <div class="row">
+      <h1 class="my-5 text-center" style="font-family: main; color: #3E5C4A;">Recent Projects</h1>
+      <div class="col-12">
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3"
+          space-between="30" free-mode="true" breakpoints='{
+    "320": { "slidesPerView": 1 },
+    "768": { "slidesPerView": 2 },
+    "992": { "slidesPerView": 3 }
+  }'>
+          <swiper-slide><img src="img/work1.jpg" alt=""></swiper-slide>
+          <swiper-slide><img src="img/work2.jpg" alt=""></swiper-slide>
+          <swiper-slide><img src="img/work3.jpg" alt=""></swiper-slide>
+          <swiper-slide><img src="img/work4.jpg" alt=""></swiper-slide>
+          <swiper-slide><img src="img/work5.jpg" alt=""></swiper-slide>
+          <swiper-slide><img src="img/work6.jpg" alt=""></swiper-slide>
+          <swiper-slide><img src="img/work7.jpg" alt=""></swiper-slide>
+          <swiper-slide><img src="img/work8.jpg" alt=""></swiper-slide>
+          <swiper-slide><img src="img/work9.jpg" alt=""></swiper-slide>
+        </swiper-container>
+
+      </div>
+    </div>
+  </div>
+  <!-- end -->
+  <!-- We Bring Ideas Home. -->
+  <div class="container-fluid my-5" style="overflow: hidden;">
+    <div class="row align-items-center">
+
+
+      <div data-aos="fade-right" class="col-xl-6 col-lg-6 col-md-12 col-12 p-5">
+        <h1 class="mb-3" style="font-family: main; color: #5a442e;">
+          We Bring Ideas Home.
+        </h1>
+
+        <h5 class="mb-3" style="font-family: nova; color: #5a442e;">
+          At Nova, we turn vision into reality. “We Bring Ideas Home” reflects our commitment to transforming creative
+          concepts into beautifully crafted living spaces. From the first sketch to the final finishing touch, we ensure
+          that every idea is thoughtfully executed with precision and care.
+        </h5>
+
+        <h5 class="mb-4" style="font-family: nova; color: #5a442e;">
+          Our team works closely with you to understand your needs, style, and aspirations — translating them into
+          interiors that feel personal, functional, and timeless. At Nova, your ideas don’t just stay on paper — they
+          come to life in the place you call home.
+        </h5>
+
+        <a href="services.html">
+          <button class="btn px-4 py-2"
+            style="border-radius:30px; color:#F5F2EC; border:none; background: #3E5C4A; color: #F5F2EC;">
+            OUR SERVICE
+          </button>
+        </a>
+      </div>
+
+      <!-- Image Side -->
+      <div class="col-xl-6 col-lg-6 col-md-12 col-12"
+        style="background: url(img/home1.jpg) center/cover no-repeat; background-attachment: fixed; min-height: 400px;">
+      </div>
+
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="container-fluid footer" style="margin-top: 100px;">
+    <div class="row align-items-center text-center text-lg-start">
+
+      <div class="col-lg-6 mb-4 mb-lg-0 footer-left">
+        <h1 class="logo">NOVA</h1>
+        <p class="copyright">© NOVA All rights Reserved.</p>
+      </div>
+
+      <div class="col-lg-6 footer-right">
+
+        <nav class="footer-nav">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT US</a>
+          <a href="services.html">SERVICE</a>
+          <a href="work.html">WORK</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+
+        <div class="social-icons mt-4">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-linkedin"></i>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+
+  <!-- end -->
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
